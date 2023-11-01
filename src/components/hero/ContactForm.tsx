@@ -16,6 +16,7 @@ const ContactForm = (props: Props) => {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
+  const [info, setInfo] = useState('');
 
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -55,6 +56,13 @@ const ContactForm = (props: Props) => {
         setName('');
         setEmail('');
         setMessage('');
+        setInfo(data?.message || 'Message Sent');
+
+        let timeout = setTimeout(() => {
+          setInfo('');
+        }, 1500);
+
+        return () => clearTimeout(timeout);
       }
     } catch (error) {
       console.error('There was a problem with the fetch operation:', error);
@@ -82,6 +90,7 @@ const ContactForm = (props: Props) => {
           </p>
         </section>
         <section className="w-full md:w-[30rem] ">
+          {info ? info : null}
           <form onSubmit={handleSubmit}>
             <div className="my-4 w-full">
               <input
