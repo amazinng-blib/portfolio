@@ -3,6 +3,7 @@ import ContactMe from './ContactMe';
 import HeroImage from './HeroImage';
 import { Saira_Condensed, Lato } from 'next/font/google';
 import { motion as m, useScroll } from 'framer-motion';
+import DownloadCv from './DownloadCv';
 
 const adam = Saira_Condensed({
   weight: '400',
@@ -31,9 +32,9 @@ const HeroText = (props: Props) => {
       //   // scale: scrollYProgress,
       //   opacity: scrollYProgress,
       // }}
-      className={`${font2.variable} font-wdc3 flex flex-col md:flex-row xl:flex-row 2xl:flex-row  md:justify-between xl:justify-between  w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] px-3 m-auto flex-wrap relative`}
+      className={`${font2.variable} font-wdc3 flex flex-col md:flex-row xl:flex-row 2xl:flex-row  md:justify-between xl:justify-between  w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%]  m-auto flex-wrap relative`}
     >
-      <section className="order-2 md:order-1 xl:order-1 md:mt-[2rem] xl:mt-[3rem] 2xl:mt-[3rem] my-3 ">
+      <section className="order-2 md:order-1 xl:order-1 md:mt-[2rem] xl:mt-[3rem] 2xl:mt-[3rem] my-3 px-3 ">
         <header className="font-bold text-[1.3rem] md:text-[2rem] xl:text-[3rem] 2xl:text-[3rem] tracking-wider text-center md:text-start xl:text-start">
           <p>
             Nice to Meet you!
@@ -48,8 +49,9 @@ const HeroText = (props: Props) => {
           </p>
         </section>
         {/* <ContactMe /> */}
+        <DownloadCv />
       </section>
-      <section className="md:order-2 xl:order-2 2xl:order-2 order-1">
+      <section className="md:order-2 xl:order-2 2xl:order-2 order-1 bg-[#242424] p-2 md:w-[20rem] xl:w-[20rem] 2xl:w-[20rem]">
         <HeroImage />
       </section>
     </m.div>

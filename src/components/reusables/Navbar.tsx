@@ -26,9 +26,9 @@ const Navbar = (props: Props) => {
       animate={{ x: '0%' }}
       transition={{ duration: 2, delay: 0.25 }}
       exit={{ opacity: 1 }}
-      className=" w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] m-auto md:bg-inherit xl:bg-inherit 2xl:bg-inherit bg-[#242424]"
+      className=" w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] m-auto md:bg-inherit xl:bg-inherit 2xl:bg-inherit bg-[#242424] "
     >
-      <div className="px-3">
+      <div className="">
         {data?.length > 0
           ? data?.map((item: NavItem, index: any) => {
               return (
@@ -41,7 +41,7 @@ const Navbar = (props: Props) => {
                   >
                     {item?.name}
                   </h2>
-                  <div className="flex gap-4 cursor-pointer bg-[#242424] py-4 md:justify-end xl:justify-end 2xl:justify-end justify-center md:max-w-[20rem] xl:max-w-[20rem] 2xl:max-w-[20rem] w-full pr-2">
+                  <div className="flex gap-4 cursor-pointer bg-[#242424] py-4 md:justify-end xl:justify-end 2xl:justify-end justify-center  w-full pr-2 md:w-[20rem] xl:w-[20rem] 2xl:w-[20rem]">
                     <a href="https://github.com/amazinng-blib" target="_blank">
                       {item?.icons?.github ? <BsGithub /> : null}
                     </a>
