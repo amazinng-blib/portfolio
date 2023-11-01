@@ -39,11 +39,8 @@ const Experience = (props: Props) => {
       style={{
         scale: scale,
         opacity: opacity,
-        // transitionDuration: '1s',
-        // transitionTimingFunction: 'linear',
-        // // transitionDelay: '0.25',
       }}
-      className={` ${adam.variable}  font-wdc2 w-full max-w-[1200px] m-auto md:w-[1200px]  tracking-wider `}
+      className={`  w-full max-w-[1300px] m-auto md:w-[1200px]  tracking-wider `}
     >
       <h2
         className={` ${adam.variable} font-wdc2 text-[1rem] md:text-[2rem]  font-bold  text-[#b7b7b7]`}
@@ -61,23 +58,26 @@ const Experience = (props: Props) => {
               <p className="my-2 text-[#fff] tracking-wider text-[1.1rem] md:text-[1.2rem] uppercase">
                 {x?.worked_as}
               </p>
-              <p
-                className={`${font2.variable}  font-wdc3 text-[#b7b7b7] tracking-wider`}
-              >
-                {x?.language}
-              </p>
 
               {x?.role?.map((item: RoleInterface, i: any) => {
                 return (
                   <ul key={i} className="my-2">
                     <li
-                      className={`${font2.variable} text-[#fff] font-wdc3   text-[1rem] tracking-wide`}
+                      className={` text-[#fff]    text-[1.1rem] tracking-wide`}
                     >
                       {item?.role}
                     </li>
                   </ul>
                 );
               })}
+
+              <p className={`  font-wdc3  tracking-wider my-6`}>
+                <span className="font-medium uppercase text-[1.1rem]">
+                  {' '}
+                  Technology Used:{' '}
+                </span>{' '}
+                <span> {x?.language} </span>
+              </p>
             </div>
           );
         })}
