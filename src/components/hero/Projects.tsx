@@ -64,13 +64,16 @@ const Projects = (props: Props) => {
               return (
                 <div
                   key={index}
-                  className="w-full md:w-[48%] xl:w-[48%] 2xl:w-[48%]  my-4 px-2"
+                  className="w-full md:w-[20rem]  2xl:w-[48%]  my-4 px-2"
                 >
                   <div className="w-[100%] h-[20rem]">
                     <Image
                       src={item?.image}
                       alt={item?.heading}
-                      className="h-full object-fill"
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      className="object-cover w-full "
                     />
                   </div>
                   <h4
