@@ -37,11 +37,11 @@ const Projects = (props: Props) => {
   }, []);
   return (
     <m.div
-      ref={ref}
-      style={{
-        // scale: scale,
-        opacity: opacity,
-      }}
+      // ref={ref}
+      // style={{
+      //   // scale: scale,
+      //   opacity: opacity,
+      // }}
       className="w-full max-w-[1100px]  md:w-[1300px] px-1 m-auto mt-[1rem] tracking-wider"
     >
       <div className="flex justify-between items-center">

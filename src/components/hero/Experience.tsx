@@ -35,11 +35,11 @@ const Experience = (props: Props) => {
   }, []);
   return (
     <m.div
-      ref={ref}
-      style={{
-        // scale: scale,
-        opacity: opacity,
-      }}
+      // ref={ref}
+      // style={{
+      //   // scale: scale,
+      //   opacity: opacity,
+      // }}
       className={`  w-full max-w-[1300px] m-auto md:w-[1200px]  tracking-wider px-2 `}
     >
       <h2
@@ -52,7 +52,7 @@ const Experience = (props: Props) => {
         {data?.map((x: ExperienceInterface, index: any) => {
           return (
             <div key={index} className="my-5">
-              <div className="flex lg:items-center items-start gap-2 tracking-wider lg:text-[1.2rem]  text-[1.125rem] uppercase text-[#b7b7b7]">
+              <div className="flex lg:items-center items-start gap-2 tracking-wider lg:text-[1.2rem]  text-[1rem] uppercase text-[#b7b7b7]">
                 <BiLink /> <span>{x?.company}</span>
               </div>
               <p className="my-2 text-[#b7b7b7] tracking-wider text-[1rem] md:text-[1.2rem] uppercase">
@@ -61,7 +61,7 @@ const Experience = (props: Props) => {
 
               {x?.role?.map((item: RoleInterface, i: any) => {
                 return (
-                  <ul key={i} className="my-2">
+                  <ul key={i} className="my-2 py-1">
                     <li className={` text-[#fff]    text-[1rem] tracking-wide`}>
                       {item?.role}
                     </li>
