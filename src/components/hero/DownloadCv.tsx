@@ -6,7 +6,10 @@ const DownloadCv = (props: Props) => {
   const LINK = 'http://localhost:3000/RESUME-2-NWANKWO-ERNEST.docx';
   const downloadFile = (e: React.FormEvent, url: any) => {
     e.preventDefault();
-    fetch(url)
+    fetch(url, {
+      method: 'GET',
+      mode: 'no-cors',
+    })
       .then((res) => res.blob())
       .then((blob) => {
         const blobUrl = window.URL.createObjectURL(new Blob([blob]));
