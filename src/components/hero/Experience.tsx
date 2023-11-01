@@ -52,10 +52,10 @@ const Experience = (props: Props) => {
         {data?.map((x: ExperienceInterface, index: any) => {
           return (
             <div key={index} className="my-5">
-              <div className="flex items-center gap-2 tracking-wider text-[1.2rem] md:text-[1.3rem] uppercase text-[#b7b7b7]">
+              <div className="flex lg:items-center items-start gap-2 tracking-wider lg:text-[1.2rem]  text-[1.125rem] uppercase text-[#b7b7b7]">
                 <BiLink /> <span>{x?.company}</span>
               </div>
-              <p className="my-2 text-[#b7b7b7] tracking-wider text-[1.1rem] md:text-[1.2rem] uppercase">
+              <p className="my-2 text-[#b7b7b7] tracking-wider text-[1rem] md:text-[1.2rem] uppercase">
                 {x?.worked_as}
               </p>
 

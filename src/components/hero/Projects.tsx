@@ -70,7 +70,7 @@ const Projects = (props: Props) => {
                       // width={100}
                       // height={100}
                       // layout="responsive"
-                      className="object-cover w-full h-full "
+                      className="md:object-cover object-contain w-full h-full "
                     />
                   </div>
                   <h4
