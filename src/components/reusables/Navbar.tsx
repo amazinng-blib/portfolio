@@ -28,7 +28,7 @@ const Navbar = (props: Props) => {
       exit={{ opacity: 1 }}
       className=" w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] m-auto "
     >
-      <div className="px-3">
+      <div className="">
         {data?.length > 0
           ? data?.map((item: NavItem, index: any) => {
               return (

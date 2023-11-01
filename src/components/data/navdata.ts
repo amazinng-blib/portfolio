@@ -98,7 +98,7 @@ export const skillsData: SkillsArray = [
 export const projectsData: ProjectArray = [
   {
     heading: 'Firepips',
-    image: '/public/image/firepips_shot.png',
+    image: '/image/firepips_shot.png',
     link: 'https://firepips3.vercel.app',
     frontEndcode: 'https://github.com/samcode-dev/firepips3',
     // backEndcode:'https://github.com/amazinng-blib/Firepips',
@@ -106,7 +106,7 @@ export const projectsData: ProjectArray = [
   },
   {
     heading: 'IP Address Tracker',
-    image: '/public/image/ip_address.png',
+    image: '/image/ip_address.png',
     link: 'https://ip-address-tracker-bay-eight.vercel.app/',
     frontEndcode: '',
     // backEndcode:'',
@@ -114,7 +114,7 @@ export const projectsData: ProjectArray = [
   },
   {
     heading: 'Prediction site',
-    image: '/public/image/ernest-predict.png',
+    image: '/image/ernest-predict.png',
     link: 'https://www.ernestpredict.com/',
     frontEndcode: 'https://github.com/amazinng-blib/ernest-predict-frontend',
     // backEndcode:'https://github.com/amazinng-blib/ernest-predict-backend',
@@ -129,7 +129,7 @@ export const projectsData: ProjectArray = [
   },
   {
     heading: 'Secure url-checker',
-    image: '/public/image/url-checker.png',
+    image: '/image/url-checker.png',
     link: 'https://url-checker-frontend.vercel.app/',
     frontEndcode: 'https://github.com/amazinng-blib/url-checker-frontend',
     // backEndcode:'https://github.com/amazinng-blib/url-checker-backend',
@@ -137,7 +137,7 @@ export const projectsData: ProjectArray = [
   },
   {
     heading: 'Security Site',
-    image: '/public/image/joint-security.png',
+    image: '/image/joint-security.png',
     link: 'https://joint-security-service.vercel.app/',
     frontEndcode: 'https://github.com/amazinng-blib/joint-security-service',
     // backEndcode:'',

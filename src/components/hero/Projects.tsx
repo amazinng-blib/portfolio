@@ -45,7 +45,7 @@ const Projects = (props: Props) => {
         // transitionTimingFunction: 'ease-in-out',
         // transitionDelay: '0.25',
       }}
-      className="w-full max-w-[1100px]  md:w-[1100px] px-3 m-auto mt-[2rem] tracking-wider"
+      className="w-full max-w-[1100px]  md:w-[1100px] px-1 m-auto mt-[2rem] tracking-wider"
     >
       <div className="flex justify-between items-center">
         <header
@@ -67,12 +67,12 @@ const Projects = (props: Props) => {
                   className="w-full md:w-[20rem]  2xl:w-[48%]  my-4 px-2"
                 >
                   <div className="w-[100%] h-[20rem]">
-                    <Image
+                    <img
                       src={item?.image}
                       alt={item?.heading}
-                      width={100}
-                      height={100}
-                      layout="responsive"
+                      // width={100}
+                      // height={100}
+                      // layout="responsive"
                       className="object-cover w-full "
                     />
                   </div>

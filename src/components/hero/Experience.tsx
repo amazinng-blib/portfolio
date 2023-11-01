@@ -43,7 +43,7 @@ const Experience = (props: Props) => {
         // transitionTimingFunction: 'linear',
         // // transitionDelay: '0.25',
       }}
-      className={` ${adam.variable}  font-wdc2 w-full max-w-[1200px] m-auto md:w-[1200px]    px-3 tracking-wider `}
+      className={` ${adam.variable}  font-wdc2 w-full max-w-[1200px] m-auto md:w-[1200px]  tracking-wider `}
     >
       <h2
         className={` ${adam.variable} font-wdc2 text-[1rem] md:text-[2rem]  font-bold  text-[#b7b7b7]`}
@@ -71,7 +71,7 @@ const Experience = (props: Props) => {
                 return (
                   <ul key={i} className="my-2">
                     <li
-                      className={`${font2.variable} text-[#fff] font-wdc3   text-[1rem] tracking-widest`}
+                      className={`${font2.variable} text-[#fff] font-wdc3   text-[1rem] tracking-wide`}
                     >
                       {item?.role}
                     </li>
