@@ -163,7 +163,7 @@ export const experince: Array<ExperienceInterface> = [
         role: 'I Implemented input validation using Joi to ensure that only appropriate data are passed during signup and login',
       },
       {
-        role: `I implemented email sending using nodemailer and gmail using two factor authentication thereby saving the company money for getting private mail and it&apos;s super fast`,
+        role: `I implemented email sending using nodemailer and gmail using two factor authentication thereby saving the company money for getting private mail and it's super fast`,
       },
       {
         role: 'I implemented a route for performing CRUD operations on predictions by the admin',
@@ -172,14 +172,14 @@ export const experince: Array<ExperienceInterface> = [
   },
   {
     company: ' Firepips School Management System',
-    language: '  Node JS Express MongoDb',
+    language: 'React Js, Express Js, Node Js, MongoDB, SASS',
     worked_as: 'Backend',
     role: [
       {
         role: 'I Implemented input validation  to ensure that only appropriate data are passed during signup and login',
       },
       {
-        role: `I implemented email sending using nodemailer and gmail using two factor authentication thereby saving the company money for getting private mail and it&apos;s super fast`,
+        role: `I implemented email sending using nodemailer and gmail using two factor authentication thereby saving the company money for getting private mail and it's super fast`,
       },
       {
         role: 'I implemented  a  route for creating Courses where Youtube videos can be uploaded and the returned response returns the duration of every added video',

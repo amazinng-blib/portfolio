@@ -46,7 +46,7 @@ const Projects = (props: Props) => {
     >
       <div className="flex justify-between items-center">
         <header
-          className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem]  font-bold  text-[#b7b7b7]`}
+          className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem]  font-bold  text-[#b7b7b7] uppercase`}
         >
           <h2>Projects</h2>
         </header>

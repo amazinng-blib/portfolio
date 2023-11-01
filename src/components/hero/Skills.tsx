@@ -39,7 +39,7 @@ const Skills = (props: Props) => {
     >
       <hr />
       <h2
-        className={` ${adam.variable} font-wdc2 text-[1rem] md:text-[2rem] mt-2 font-bold text-[#b7b7b7] uppercase   `}
+        className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem] my-4 font-bold text-[#b7b7b7] uppercase   `}
       >
         Skills
       </h2>

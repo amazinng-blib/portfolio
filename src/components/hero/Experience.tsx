@@ -43,7 +43,7 @@ const Experience = (props: Props) => {
       className={`  w-full max-w-[1300px] m-auto md:w-[1200px]  tracking-wider px-2 `}
     >
       <h2
-        className={` ${adam.variable} font-wdc2 text-[1rem] md:text-[2rem]  font-bold  text-[#b7b7b7]`}
+        className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem]  font-bold  text-[#b7b7b7]`}
       >
         Experiences
       </h2>
@@ -71,13 +71,13 @@ const Experience = (props: Props) => {
                 );
               })}
 
-              <p className={`  font-wdc3  tracking-wider my-6`}>
+              {/* <p className={`  font-wdc3  tracking-wider my-6`}>
                 <span className="font-medium uppercase text-[1.1rem] text-[#b7b7b7]">
                   {' '}
                   Technology Used:{' '}
                 </span>{' '}
                 <span> {x?.language} </span>
-              </p>
+              </p> */}
             </div>
           );
         })}
