@@ -64,7 +64,7 @@ const ContactForm = (props: Props) => {
     <m.div
       ref={ref}
       style={{
-        scale: scale,
+        // scale: scale,
         opacity: opacity,
       }}
       className="bg-[#242424] py-10"

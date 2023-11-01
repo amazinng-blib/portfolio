@@ -28,7 +28,7 @@ const HeroText = (props: Props) => {
     <m.div
       ref={ref}
       style={{
-        scale: scrollYProgress,
+        // scale: scrollYProgress,
         opacity: scrollYProgress,
       }}
       className={`${font2.variable} font-wdc3 flex flex-col md:flex-row xl:flex-row 2xl:flex-row  md:justify-between xl:justify-between  w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] px-3 m-auto flex-wrap relative`}

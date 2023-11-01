@@ -29,15 +29,13 @@ const Skills = (props: Props) => {
   }, []);
   return (
     <m.div
-      ref={ref}
-      style={{
-        scale: scale,
-        opacity: opacity,
-        // transitionDuration: '1s',
-        // transitionTimingFunction: 'linear',
-        // // transitionDelay: '0.25',
-      }}
-      className={` ${adam.variable} font-wdc2 w-full max-w-[1000px] m-auto md:w-[1000px]   mt-[2rem] px-3 tracking-wider `}
+      // ref={ref}
+      // style={{
+      //   scale: scale,
+      //   opacity: opacity,
+
+      // }}
+      className={` ${adam.variable} font-wdc2 w-full max-w-[1300px] m-auto md:w-[1000px]   mt-[2rem] px-1 tracking-wider `}
     >
       <hr />
       <h2

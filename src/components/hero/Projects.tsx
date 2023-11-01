@@ -39,13 +39,10 @@ const Projects = (props: Props) => {
     <m.div
       ref={ref}
       style={{
-        scale: scale,
+        // scale: scale,
         opacity: opacity,
-        // transitionDuration: '1s',
-        // transitionTimingFunction: 'ease-in-out',
-        // transitionDelay: '0.25',
       }}
-      className="w-full max-w-[1100px]  md:w-[1100px] px-1 m-auto mt-[2rem] tracking-wider"
+      className="w-full max-w-[1100px]  md:w-[1300px] px-1 m-auto mt-[1rem] tracking-wider"
     >
       <div className="flex justify-between items-center">
         <header
@@ -73,7 +70,7 @@ const Projects = (props: Props) => {
                       // width={100}
                       // height={100}
                       // layout="responsive"
-                      className="object-cover w-full "
+                      className="object-cover w-full h-full "
                     />
                   </div>
                   <h4

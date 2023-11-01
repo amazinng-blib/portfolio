@@ -37,10 +37,10 @@ const Experience = (props: Props) => {
     <m.div
       ref={ref}
       style={{
-        scale: scale,
+        // scale: scale,
         opacity: opacity,
       }}
-      className={`  w-full max-w-[1300px] m-auto md:w-[1200px]  tracking-wider `}
+      className={`  w-full max-w-[1300px] m-auto md:w-[1200px]  tracking-wider px-2 `}
     >
       <h2
         className={` ${adam.variable} font-wdc2 text-[1rem] md:text-[2rem]  font-bold  text-[#b7b7b7]`}
@@ -55,16 +55,14 @@ const Experience = (props: Props) => {
               <div className="flex items-center gap-2 tracking-wider text-[1.2rem] md:text-[1.3rem] uppercase text-[#b7b7b7]">
                 <BiLink /> <span>{x?.company}</span>
               </div>
-              <p className="my-2 text-[#fff] tracking-wider text-[1.1rem] md:text-[1.2rem] uppercase">
+              <p className="my-2 text-[#b7b7b7] tracking-wider text-[1.1rem] md:text-[1.2rem] uppercase">
                 {x?.worked_as}
               </p>
 
               {x?.role?.map((item: RoleInterface, i: any) => {
                 return (
                   <ul key={i} className="my-2">
-                    <li
-                      className={` text-[#fff]    text-[1.1rem] tracking-wide`}
-                    >
+                    <li className={` text-[#fff]    text-[1rem] tracking-wide`}>
                       {item?.role}
                     </li>
                   </ul>
@@ -72,7 +70,7 @@ const Experience = (props: Props) => {
               })}
 
               <p className={`  font-wdc3  tracking-wider my-6`}>
-                <span className="font-medium uppercase text-[1.1rem]">
+                <span className="font-medium uppercase text-[1.1rem] text-[#b7b7b7]">
                   {' '}
                   Technology Used:{' '}
                 </span>{' '}
