@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { Ernest, Logo } from '../image';
+import { Ernest, Logo } from '../../../public/image';
 
 type Props = {};
 

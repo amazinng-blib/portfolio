@@ -13,7 +13,7 @@ import {
   JointSecurity,
   UrlChecker,
   fire_pips,
-} from '../image';
+} from '../../../public/image';
 
 export const navData: NavDataArray = [
   {
