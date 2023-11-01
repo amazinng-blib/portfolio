@@ -26,9 +26,9 @@ const Navbar = (props: Props) => {
       animate={{ x: '0%' }}
       transition={{ duration: 2, delay: 0.25 }}
       exit={{ opacity: 1 }}
-      className=" w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] m-auto "
+      className=" w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] m-auto md:bg-inherit xl:bg-inherit 2xl:bg-inherit bg-[#242424]"
     >
-      <div className="">
+      <div className="px-3">
         {data?.length > 0
           ? data?.map((item: NavItem, index: any) => {
               return (
@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
                   className="flex items-center md:justify-between xl:justify-between justify-center flex-col md:flex-row xl:flex-row  z-30"
                 >
                   <h2
-                    className={`${adam.variable} font-wdc2  font-bold tracking-wider text-center md:text-start xl:text:start 2xl:text-start text-[1.5rem] md:bg-inherit xl:bg-inherit 2xl:bg-inherit bg-[#242424] md:w-[14.5rem] xl:w-[20rem] 2xl:w-[20rem] w-full  `}
+                    className={`${adam.variable} font-wdc2  font-bold tracking-wider text-center md:text-start xl:text:start 2xl:text-start text-[1.5rem]  md:w-[14.5rem] xl:w-[20rem] 2xl:w-[20rem] w-full  `}
                   >
                     {item?.name}
                   </h2>

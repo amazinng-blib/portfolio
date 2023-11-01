@@ -73,7 +73,7 @@ const ContactForm = (props: Props) => {
       <div
         className={`${adam.variable}  font-wdc2 w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] px-3 m-auto  tracking-wider flex lg:justify-between justify-center flex-wrap gap-4 `}
       >
-        <section className="w-full md:w-[30rem] text-center">
+        <section className="w-full md:w-[30rem]  text-center">
           <h3 className={`text-[1rem] md:text-[3rem]`}>Contact</h3>
           <p>
             I would love to hear about your project and how i <br /> could help.
@@ -81,8 +81,8 @@ const ContactForm = (props: Props) => {
             soon as possible
           </p>
         </section>
-        <section>
-          <form className="w-full px-1 md:w-[30rem] " onSubmit={handleSubmit}>
+        <section className="w-full md:w-[30rem] ">
+          <form onSubmit={handleSubmit}>
             <div className="my-4 w-full">
               <input
                 type="text"

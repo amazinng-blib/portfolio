@@ -70,21 +70,10 @@ const Projects = (props: Props) => {
                       // width={100}
                       // height={100}
                       // layout="responsive"
-                      className="md:object-cover object-contain w-full h-full "
+                      className=" object-contain w-full h-full "
                     />
                   </div>
-                  <h4
-                    className={`${sawarabi.variable} font-wdc uppercase  text-[1rem] md:text-[1rem]  font-bold mb-4 my-2 text-[#b7b7b7] flex items-center justify-between`}
-                  >
-                    {item?.heading}{' '}
-                    <a
-                      href={item?.link}
-                      target="_blank"
-                      className="capitalize flex items-center gap-2 text-[.9rem] cursor-pointer text-[#fff]"
-                    >
-                      <GoLinkExternal /> visit
-                    </a>
-                  </h4>
+
                   <div className="flex gap-2 flex-wrap">
                     {item?.language?.map((d, index) => {
                       return (
@@ -97,6 +86,18 @@ const Projects = (props: Props) => {
                       );
                     })}
                   </div>
+                  <h4
+                    className={`${sawarabi.variable} font-wdc uppercase  text-[1rem] md:text-[1rem]  font-bold mb-4 my-2 text-[#fff] flex items-center justify-between`}
+                  >
+                    {item?.heading}{' '}
+                    <a
+                      href={item?.link}
+                      target="_blank"
+                      className="capitalize flex items-center gap-2 text-[.9rem] cursor-pointer "
+                    >
+                      <GoLinkExternal /> visit
+                    </a>
+                  </h4>
                 </div>
               );
             })

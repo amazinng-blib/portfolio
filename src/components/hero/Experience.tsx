@@ -52,17 +52,19 @@ const Experience = (props: Props) => {
         {data?.map((x: ExperienceInterface, index: any) => {
           return (
             <div key={index} className="my-5">
-              <div className="flex lg:items-center items-start gap-2 tracking-wider lg:text-[1.2rem]  text-[1rem] uppercase text-[#b7b7b7]">
+              <div className="flex lg:items-center items-start gap-2 tracking-wider lg:text-[1.2rem]  text-[1rem] uppercase text-[#fff]">
                 <BiLink /> <span>{x?.company}</span>
               </div>
-              <p className="my-2 text-[#b7b7b7] tracking-wider text-[1rem] md:text-[1.2rem] uppercase">
+              <p className="my-2 text-[#fff] tracking-wider text-[1rem] md:text-[1.2rem] uppercase">
                 {x?.worked_as}
               </p>
 
               {x?.role?.map((item: RoleInterface, i: any) => {
                 return (
                   <ul key={i} className="my-2 py-1">
-                    <li className={` text-[#fff]    text-[1rem] tracking-wide`}>
+                    <li
+                      className={`  text-[#b7b7b7]   text-[1rem] tracking-wide`}
+                    >
                       {item?.role}
                     </li>
                   </ul>
