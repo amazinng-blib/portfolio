@@ -4,8 +4,7 @@ type Props = {};
 
 const DownloadCv = (props: Props) => {
   const LINK = 'http://localhost:3000/RESUME-2-NWANKWO-ERNEST.docx';
-  const downloadFile = (e: React.FormEvent, url: any) => {
-    e.preventDefault();
+  const downloadFile = (url: any) => {
     fetch(url, {
       method: 'GET',
       mode: 'no-cors',
@@ -27,7 +26,7 @@ const DownloadCv = (props: Props) => {
     <div>
       <button
         type="button"
-        onClick={(e: any) => downloadFile(e, LINK)}
+        onClick={(e: any) => downloadFile(LINK)}
         className="uppercase border-b-2 border-[#7bc5a5] md:text-[1rem] xl:text-[1rem] 2xl:text-[1rem] text-[.7rem] "
       >
         Download CV

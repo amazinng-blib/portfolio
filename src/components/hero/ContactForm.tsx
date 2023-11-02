@@ -3,6 +3,7 @@
 import React, { useState, useRef } from 'react';
 import { Saira_Condensed } from 'next/font/google';
 import { motion as m, useScroll, useTransform } from 'framer-motion';
+import { Loader } from '../loader';
 
 const adam = Saira_Condensed({
   weight: '400',
@@ -17,6 +18,7 @@ const ContactForm = (props: Props) => {
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const [info, setInfo] = useState('');
+  const [loading, setLoading] = useState<boolean>(false);
 
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -34,6 +36,7 @@ const ContactForm = (props: Props) => {
         email,
         message,
       };
+      setLoading(true);
 
       const requestOptions = {
         method: 'POST',
@@ -53,6 +56,7 @@ const ContactForm = (props: Props) => {
 
       const data = await response.json();
       if (data) {
+        setLoading(false);
         setName('');
         setEmail('');
         setMessage('');
@@ -60,7 +64,7 @@ const ContactForm = (props: Props) => {
 
         let timeout = setTimeout(() => {
           setInfo('');
-        }, 1500);
+        }, 2000);
 
         return () => clearTimeout(timeout);
       }
@@ -91,6 +95,7 @@ const ContactForm = (props: Props) => {
         </section>
         <section className="w-full md:w-[30rem] ">
           {info ? info : null}
+          {loading ? <Loader variant="circular" /> : null}
           <form onSubmit={handleSubmit}>
             <div className="my-4 w-full">
               <input
