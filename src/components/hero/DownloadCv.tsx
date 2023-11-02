@@ -7,7 +7,7 @@ const DownloadCv = (props: Props) => {
   const downloadFile = (url: any) => {
     fetch(url, {
       method: 'GET',
-      mode: 'no-cors',
+      // mode: 'no-cors',
     })
       .then((res) => res.blob())
       .then((blob) => {
@@ -20,7 +20,8 @@ const DownloadCv = (props: Props) => {
         document.body.appendChild(aTag);
         aTag.click();
         aTag.remove();
-      });
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <div>
