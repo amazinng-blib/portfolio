@@ -42,11 +42,11 @@ const Projects = (props: Props) => {
       //   // scale: scale,
       //   opacity: opacity,
       // }}
-      className="w-full max-w-[1100px]  md:w-[1300px] px-1 m-auto mt-[1rem] tracking-wider"
+      className="w-full max-w-[1100px]   px-2 m-auto mt-[1rem] tracking-wider"
     >
-      <div className="flex justify-between items-center">
+      <div className="flex justify-center gap-4 items-center">
         <header
-          className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem]  font-bold  text-[#b7b7b7] uppercase`}
+          className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem]  font-bold  text-[#b7b7b7] uppercase border-b max-w-max m-auto`}
         >
           <h2>Projects</h2>
         </header>
@@ -55,7 +55,7 @@ const Projects = (props: Props) => {
       </div>
 
       {/* display projects */}
-      <div className="flex justify-between flex-wrap transition-all duration-1000 ease-in-out">
+      <div className="flex justify-center gap-4 flex-wrap transition-all duration-1000 ease-in-out">
         {data?.length > 0
           ? data?.map((item: ProjectItems, index: any) => {
               return (
