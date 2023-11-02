@@ -3,7 +3,7 @@ import React from 'react';
 type Props = {};
 
 const DownloadCv = (props: Props) => {
-  const LINK = 'http://localhost:3000/RESUME-2-NWANKWO-ERNEST.docx';
+  const LINK = 'https://portfolio-2u6f.vercel.app/RESUME-2-NWANKWO-ERNEST.docx';
   const downloadFile = (url: any) => {
     fetch(url, {
       method: 'GET',
