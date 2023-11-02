@@ -42,11 +42,11 @@ const Projects = (props: Props) => {
       //   // scale: scale,
       //   opacity: opacity,
       // }}
-      className="w-full max-w-[1100px]  md:w-[1300px] px-1 m-auto mt-[1rem] tracking-wider"
+      className="w-full max-w-[1100px]  m-auto mt-[1rem] tracking-wider px-3"
     >
       <div className="flex justify-between items-center">
         <header
-          className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem]  font-bold  text-[#b7b7b7] uppercase`}
+          className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem]  font-bold  text-[#b7b7b7] uppercase text-center border-b  max-w-max m-auto`}
         >
           <h2>Projects</h2>
         </header>

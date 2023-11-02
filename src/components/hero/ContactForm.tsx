@@ -105,6 +105,7 @@ const ContactForm = (props: Props) => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="NAME"
+                required
                 className="border-b border-[#cacaca] bg-[#242424] focus:outline-none w-full text-[#fff] md:p-3 p-2 capitalize tracking-widest "
               />
             </div>
@@ -117,6 +118,7 @@ const ContactForm = (props: Props) => {
                 autoComplete="false"
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="EMAIL"
+                required
                 className="border-b border-[#cacaca] bg-[#242424] focus:outline-none w-full text-[#fff] md:p-3 p-2 tracking-widest "
               />
             </div>
@@ -127,6 +129,7 @@ const ContactForm = (props: Props) => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="MESSAGE"
+                required
                 className="border-b border-[#cacaca] bg-inherit focus:outline-none w-full h-[10rem] p-3 text-[#fff] tracking-widest capitalize "
               ></textarea>
             </div>

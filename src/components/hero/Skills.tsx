@@ -35,16 +35,16 @@ const Skills = (props: Props) => {
       //   opacity: opacity,
 
       // }}
-      className={` ${adam.variable} font-wdc2 w-full max-w-[1300px] m-auto md:w-[1000px]   mt-[2rem] px-1 tracking-wider `}
+      className={` ${adam.variable} font-wdc2 w-full max-w-[1300px] m-auto    mt-[2rem] px-3 tracking-wider `}
     >
       <hr />
       <h2
-        className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem] my-4 font-bold text-[#b7b7b7] uppercase   `}
+        className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem] my-4 font-bold text-[#b7b7b7] uppercase  text-center border-b  max-w-max m-auto  `}
       >
         Skills
       </h2>
 
-      <div className="flex justify-between gap-2 flex-wrap mt-6">
+      <div className="flex justify-center gap-2 flex-wrap mt-6">
         {data?.length > 0
           ? data?.map((item: SkillsItem, index: any) => {
               return (
