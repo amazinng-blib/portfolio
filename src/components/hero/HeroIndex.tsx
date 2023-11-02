@@ -13,7 +13,7 @@ type Props = {};
 
 const HeroIndex = (props: Props) => {
   return (
-    <div>
+    <div className="">
       <m.div
         variants={{
           hidden: { opacity: 0, y: 75 },
