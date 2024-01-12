@@ -114,7 +114,7 @@ export const projectsData: ProjectArray = [
   },
   {
     heading: 'Prediction site',
-    image: '/image/ernest-predict.PNG',
+    image: '/image/prediction_site.PNG',
     link: 'https://www.ernestpredict.com/',
     frontEndcode: 'https://github.com/amazinng-blib/ernest-predict-frontend',
     // backEndcode:'https://github.com/amazinng-blib/ernest-predict-backend',
