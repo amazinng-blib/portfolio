@@ -99,7 +99,7 @@ export const projectsData: ProjectArray = [
   {
     heading: 'Firepips',
     image: '/image/firepips_shot.PNG',
-    link: 'https://firepips3.vercel.app',
+    link: 'https://firepipsfx.com/',
     frontEndcode: 'https://github.com/samcode-dev/firepips3',
     // backEndcode:'https://github.com/amazinng-blib/Firepips',
     language: ['React Js', 'Express Js', 'Node Js', 'MongoDB', 'SASS'],
