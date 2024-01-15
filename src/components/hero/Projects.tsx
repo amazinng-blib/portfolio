@@ -55,7 +55,7 @@ const Projects = (props: Props) => {
       </div>
 
       {/* display projects */}
-      <div className="flex justify-center gap-4 flex-wrap transition-all duration-1000 ease-in-out">
+      <div className="flex justify-center xl:gap-[2rem] gap-4 flex-wrap transition-all duration-1000 ease-in-out">
         {data?.length > 0
           ? data?.map((item: ProjectItems, index: any) => {
               return (
