@@ -70,14 +70,6 @@ const Experience = (props: Props) => {
                   </ul>
                 );
               })}
-
-              {/* <p className={`  font-wdc3  tracking-wider my-6`}>
-                <span className="font-medium uppercase text-[1.1rem] text-[#b7b7b7]">
-                  {' '}
-                  Technology Used:{' '}
-                </span>{' '}
-                <span> {x?.language} </span>
-              </p> */}
             </div>
           );
         })}

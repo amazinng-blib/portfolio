@@ -97,12 +97,20 @@ export const skillsData: SkillsArray = [
 
 export const projectsData: ProjectArray = [
   {
-    heading: 'Firepips',
+    heading: 'Forex Trading Online Teaching School',
     image: '/image/firepips_shot.PNG',
     link: 'https://firepipsfx.com/',
     frontEndcode: 'https://github.com/samcode-dev/firepips3',
     // backEndcode:'https://github.com/amazinng-blib/Firepips',
     language: ['React Js', 'Express Js', 'Node Js', 'MongoDB', 'SASS'],
+  },
+  {
+    heading: 'Real State Management Site',
+    image: '/image/real_state.PNG',
+    link: 'https://real-state-frontend-iota.vercel.app/',
+    frontEndcode: 'https://github.com/samcode-dev/firepips3',
+    // backEndcode:'https://github.com/amazinng-blib/Firepips',
+    language: ['React Js', 'Express Js', 'Node Js', 'MongoDB', 'Prisma', 'CSS'],
   },
   {
     heading: 'IP Address Tracker',
@@ -160,13 +168,19 @@ export const experince: Array<ExperienceInterface> = [
     worked_as: 'FullStack',
     role: [
       {
-        role: 'I Implemented input validation using Joi to ensure that only appropriate data are passed during signup and login',
+        role: '	Planned and estimated project features, designed and implemented route optimization algorithm.',
       },
       {
-        role: `I implemented email sending using nodemailer and gmail using two factor authentication thereby saving the company money for getting private mail and it's super fast`,
+        role: `	Designed and developed "Ernest Predict," a full-stack prediction site, providing users with daily game predictions and results.`,
       },
       {
-        role: 'I implemented a route for performing CRUD operations on predictions by the admin',
+        role: '	I implemented CORS configuration to avoid security pitfalls',
+      },
+      {
+        role: '	Implemented a paginated interface for efficient navigation through daily games and results',
+      },
+      {
+        role: '	•	Ensured data security and privacy by implementing robust user authentication mechanisms',
       },
     ],
   },
@@ -176,28 +190,31 @@ export const experince: Array<ExperienceInterface> = [
     worked_as: 'Backend',
     role: [
       {
-        role: 'I Implemented input validation  to ensure that only appropriate data are passed during signup and login',
+        role: '	Spearheaded the development of the full backend for a forex teaching school, enabling seamless content management and secure user interactions',
       },
       {
-        role: `I implemented email sending using nodemailer and gmail using two factor authentication thereby saving the company money for getting private mail and it's super fast`,
+        role: `	Implemented a video uploading system, allowing administrators to upload teaching materials effortlessly`,
       },
       {
-        role: 'I implemented  a  route for creating Courses where Youtube videos can be uploaded and the returned response returns the duration of every added video',
+        role: '	Designed and integrated an assignment management system, facilitating easy assignment creation, distribution, and access',
       },
       {
-        role: 'I implemented  a  route for adding sections to created courses. Every sections can have as many videos as possible',
+        role: '	Developed a blog posting feature, providing a platform for administrators to share valuable insights with users',
       },
       {
-        role: 'I Implemented  a  route for handling payment during subscription using Paystack Api',
+        role: '	Implemented a payment details module, allowing administrators to track financial transactions related to courses',
       },
       {
-        role: 'I Implemented  a  route that keeps track of video progress',
+        role: ' Created API endpoints for assigning user plans upon successful payment verification',
       },
       {
-        role: 'I Implemented  a  route for submitting Assignment',
+        role: '	Integrated the Paystack webhook API to ensure secure and reliable payment verification processes',
       },
       {
-        role: 'I Implemented  a  route for grading Assignment',
+        role: '	I handle email sending using nodemailer and gmail',
+      },
+      {
+        role: '	Implemented comment API in the blog post',
       },
     ],
   },
@@ -207,63 +224,40 @@ export const experince: Array<ExperienceInterface> = [
     worked_as: 'FullStack',
     role: [
       {
-        role: 'I Implemented input validation using Joi to ensure that only appropriate data are passed when typing url link to check',
+        role: '	Conceptualized and developed a secure URL checker application using Node.js and Express.js',
       },
 
       {
-        role: 'I implemented a route that confirms whether URL link is Secured or Not',
+        role: '	Implemented secure coding practices to validate and check the security status of URLs',
+      },
+      {
+        role: '		Designed and implemented RESTful APIs for seamless integration with other systems',
+      },
+      {
+        role: '		Deployed the application on Render and Vercel for optimal accessibility',
       },
     ],
   },
-  {
-    company: `Domino's`,
-    language: ' Node JS Express MongoDB',
-    worked_as: 'FullStack',
-    role: [
-      {
-        role: 'Developed route optimization service for distribution logistics that automates route planning and achieves 20% of fuel savings.',
-      },
-      {
-        role: ` Planned and estimated project features, designed and implemented route
-        optimization algorithm, fast and memory-effective geographical data manipulation, frontend, Restful
-        API.
-        `,
-      },
-      {
-        role: 'Developed business rule engine. Introduced and enforced common code conventions and best practices.',
-      },
-    ],
-  },
-  {
-    company: 'Loyster',
-    language: ' React JS,  CSS, Redux (legacy Redux for state management)',
-    worked_as: 'FrontEnd',
-    role: [
-      {
-        role: 'I Implemented Signup and login with Google Functionality',
-      },
-      {
-        role: `I Observed best practices and replicated the UI design accurate`,
-      },
-      {
-        role: 'I prevented unneccessary  re-render by using appropriate React hooks at appropriate time',
-      },
-    ],
-  },
+
   {
     company: 'IP Address Tracker -- Personal Project',
     language: ' React JS,  Tailwind CSS and external API',
     worked_as: 'FrontEnd',
     role: [
       {
-        role: 'I ensured screen responsiveness by handling different screen sizes',
+        role: '	Utilized an existing Geolocation API to fetch coordinates based on user IP addresses',
       },
       {
-        role: `I Observed best practices during the project by preventing unneccessary re-render when a component gets mounted`,
+        role: `	Designed and implemented a responsive and visually appealing React frontend to display user locations on a map`,
       },
       {
-        role: `I implemented Ip Address search based on the didgits user inputs in the input field by making an API call to 
-        the external API, getting their Coordinates in map and automatically navigating them in the map with the coords fecthed `,
+        role: `	Ensured an intuitive user experience through thoughtful UI/UX design principles `,
+      },
+      {
+        role: ` Implemented best practices to optimize performance and prevent unnecessary re-renders`,
+      },
+      {
+        role: `	Deployed the application on vercel to ensure accessibility`,
       },
     ],
   },

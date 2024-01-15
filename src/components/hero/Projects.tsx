@@ -61,25 +61,22 @@ const Projects = (props: Props) => {
               return (
                 <div
                   key={index}
-                  className="w-full md:w-[20rem]  2xl:w-[48%]  my-4 px-2"
+                  className="w-full md:w-[40rem]  2xl:w-[48%]  my-4   bg-[#968787] p-3 rounded-xl  "
                 >
-                  <div className="w-[100%] h-[20rem]">
-                    <img
-                      src={item?.image}
-                      alt={item?.heading}
-                      // width={100}
-                      // height={100}
-                      // layout="responsive"
-                      className=" object-contain w-full h-full "
-                    />
-                  </div>
+                  {/* <div className="w-[100%] "> */}
+                  <img
+                    src={item?.image}
+                    alt={item?.heading}
+                    className=" object-cover  w-full h-[25rem] "
+                  />
+                  {/* </div> */}
 
-                  <div className="flex gap-2 flex-wrap">
+                  <div className="flex gap-2 flex-wrap text-[#f5f3f3]">
                     {item?.language?.map((d, index) => {
                       return (
                         <div
                           key={index}
-                          className=" uppercase text-[#b7b7b7] text-[.8rem]"
+                          className=" uppercase  text-[.8rem] mt-3"
                         >
                           <span>{d}</span>
                         </div>
