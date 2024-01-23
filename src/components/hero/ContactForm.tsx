@@ -42,7 +42,7 @@ const ContactForm = (props: Props) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer EKzntpy6uFcJKw497j5fZ0ae`,
+          Authorization: `EKzntpy6uFcJKw497j5fZ0ae`,
         },
         body: JSON.stringify(obj),
       };
