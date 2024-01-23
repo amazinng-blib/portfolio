@@ -67,7 +67,7 @@ const Projects = (props: Props) => {
                   <img
                     src={item?.image}
                     alt={item?.heading}
-                    className=" object-contain  w-full h-[25rem] "
+                    className=" object-contain   w-full lg:h-[20rem] "
                   />
                   {/* </div> */}
 
