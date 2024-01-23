@@ -42,13 +42,13 @@ const ContactForm = (props: Props) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'Bearer ' + 'EKzntpy6uFcJKw497j5fZ0ae',
+          // Authorization: 'Bearer ' + 'EKzntpy6uFcJKw497j5fZ0ae',
         },
         body: JSON.stringify(obj),
       };
       const response = await fetch(
-        // 'https://nodemailer-email-sender.onrender.com/send-mail',
-        'https://nodemailer-email-sender-jyqbqaha1-amazinng-blib.vercel.app/send-mail',
+        // 'https://nodemailer-email-sender.onrender.com/email/send-mail',
+        'https://nodemailer-email-sender-jyqbqaha1-amazinng-blib.vercel.app/email/send-mail',
         requestOptions
       );
 
