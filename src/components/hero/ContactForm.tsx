@@ -42,9 +42,9 @@ const ContactForm = (props: Props) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          Authorization: `Bearer EKzntpy6uFcJKw497j5fZ0ae`,
         },
         body: JSON.stringify(obj),
-        Authorization: `Bearer EKzntpy6uFcJKw497j5fZ0ae`,
       };
       const response = await fetch(
         // 'https://nodemailer-email-sender.onrender.com/send-mail',
