@@ -47,7 +47,7 @@ const ContactForm = (props: Props) => {
         body: JSON.stringify(obj),
       };
       const response = await fetch(
-        'https://nodemailer-email-sender.onrender.com/email/send-mail',
+        'https://email-50ug.onrender.com/email/send-mail',
         // 'https://nodemailer-email-sender-jyqbqaha1-amazinng-blib.vercel.app/email/send-mail',
         requestOptions
       );
