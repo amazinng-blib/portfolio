@@ -32,11 +32,11 @@ const HeroText = (props: Props) => {
       //   // scale: scrollYProgress,
       //   opacity: scrollYProgress,
       // }}
-      className={`${font2.variable} font-wdc3 flex flex-col md:flex-row xl:flex-row 2xl:flex-row   md:justify-center xl:justify-between  w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%]  m-auto flex-wrap relative`}
+      className={`grid grid-cols-2 gap-6 mb-4`}
     >
-      <section className="order-2 md:order-1 xl:order-1 md:mt-[2rem] xl:mt-[3rem] 2xl:mt-[3rem] my-3 px-3 ">
+      <section className="order-2 md:order-1 xl:order-1 md:mt-[2rem] xl:mt-[3rem] 2xl:mt-[3rem] my-3 px-3 flex flex-col justify-center">
         <header className="font-bold text-[1.3rem] md:text-[2rem] xl:text-[3rem] 2xl:text-[3rem] tracking-wider text-center md:text-start xl:text-start">
-          <p>
+          <p className="gradient-title">
             Nice to Meet you!
             <br /> I&apos;m Nwankwo Ernest
             <br /> Onyebuchi.
@@ -51,11 +51,17 @@ const HeroText = (props: Props) => {
         {/* <ContactMe /> */}
         <DownloadCv />
       </section>
-      <section className="md:order-2 xl:order-2 2xl:order-2 order-1 bg-[#242424] p-2 md:w-[20rem] xl:w-[20rem] 2xl:w-[20rem]">
-        <HeroImage />
-      </section>
+      <HeroImage />
     </m.div>
   );
 };
 
 export default HeroText;
+{
+  /* <section className="md:order-2 xl:order-2 2xl:order-2 order-1 bg-[#242424] "> */
+}
+
+{
+  /* </section> */
+}
+//p-2 md:w-[20rem] xl:w-[20rem] 2xl:w-[20rem]

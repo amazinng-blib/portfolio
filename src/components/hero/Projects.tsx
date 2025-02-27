@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState, useRef } from 'react';
-import ContactMe from './ContactMe';
 import { ProjectArray, ProjectItems } from '../Types';
 import { projectsData } from '../data/navdata';
 import Image from 'next/image';
@@ -42,7 +41,7 @@ const Projects = (props: Props) => {
       //   // scale: scale,
       //   opacity: opacity,
       // }}
-      className="w-full max-w-[1100px]   px-2 m-auto mt-[1rem] tracking-wider"
+      className="container mx-auto   "
     >
       <div className="flex justify-center gap-4 items-center">
         <header
@@ -55,19 +54,21 @@ const Projects = (props: Props) => {
       </div>
 
       {/* display projects */}
-      <div className="flex justify-center xl:gap-[2rem] gap-4 flex-wrap transition-all duration-1000 ease-in-out">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {data?.length > 0
           ? data?.map((item: ProjectItems, index: any) => {
               return (
                 <div
                   key={index}
-                  className="w-full md:w-[40rem]  2xl:w-[48%]  my-4   bg-[#968787] p-3 rounded-xl  "
+                  className="w-full   my-4   bg-[#353434] p-3 rounded-xl  "
                 >
                   {/* <div className="w-[100%] "> */}
-                  <img
+                  <Image
                     src={item?.image}
                     alt={item?.heading}
-                    className=" object-contain   w-full lg:h-[20rem] "
+                    width={200}
+                    height={250}
+                    className=" object-cover"
                   />
                   {/* </div> */}
 

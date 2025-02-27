@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-[#151515] text-[#fff]">
+    <html lang="en" className="bg-[#151515] text-[#fff] container mx-auto px-4">
       <body>
         <Wraper>
           <m.div

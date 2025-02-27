@@ -6,7 +6,7 @@ export type NavItem = {
     twitter: unknown | any;
     whatsap: unknown | any;
     github: unknown | any;
-    instagram: unknown | any;
+    linkedIn: unknown | any;
   };
 };
 

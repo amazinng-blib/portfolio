@@ -40,7 +40,7 @@ const Experience = (props: Props) => {
       //   // scale: scale,
       //   opacity: opacity,
       // }}
-      className={`  w-full max-w-[1300px] m-auto  tracking-wider px-3 `}
+      className={` space-y-6 `}
     >
       <h2
         className={` ${adam.variable} font-wdc2 text-[1.2rem] md:text-[2rem]  font-bold  text-[#b7b7b7] border-b max-w-max m-auto uppercase`}

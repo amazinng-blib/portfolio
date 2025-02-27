@@ -81,25 +81,23 @@ const ContactForm = (props: Props) => {
         // scale: scale,
         opacity: opacity,
       }}
-      className="bg-[#242424] py-10"
+      className="space-y-4 "
       id="#contact"
     >
-      <div
-        className={`${adam.variable}  font-wdc2 w-full md:w-[65%] xl:w-[65%] 2xl:w-[65%] px-3 m-auto  tracking-wider flex lg:justify-between justify-center flex-wrap gap-4 `}
-      >
-        <section className="w-full md:w-[30rem]  text-center">
-          <h3 className={`text-[1rem] md:text-[3rem]`}>Contact</h3>
-          <p>
+      <div className={` font-wdc2  grid grid-cols-1 md:grid-cols-2  space-y-4`}>
+        <section className="space-y-6">
+          <h3 className={`text-4xl font-semibold`}>Contact</h3>
+          <p className="text-sm font-normal">
             I would love to hear about your project and how i <br /> could help.
             Please fill-in the form, and i&apos;ll get back <br /> to you as
             soon as possible
           </p>
         </section>
-        <section className="w-full md:w-[30rem] ">
+        <section className=" ">
           {info ? info : null}
           {loading ? <Loader variant="circular" /> : null}
           <form onSubmit={handleSubmit}>
-            <div className="my-4 w-full">
+            <div className="my-4 ">
               <input
                 type="text"
                 name="name"
@@ -111,7 +109,7 @@ const ContactForm = (props: Props) => {
                 className="border-b border-[#cacaca] bg-[#242424] focus:outline-none w-full text-[#fff] md:p-3 p-2 capitalize tracking-widest "
               />
             </div>
-            <div className="my-4 w-full">
+            <div className="my-4 ">
               <input
                 type="email"
                 name="email"

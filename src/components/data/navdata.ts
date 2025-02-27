@@ -20,7 +20,7 @@ export const navData: NavDataArray = [
     name: 'Ernest',
     icons: {
       github: 'github',
-      instagram: 'instagram',
+      linkedIn: 'linkedIn',
       twitter: 'twitter',
       whatsap: 'whatsap',
     },
@@ -30,15 +30,15 @@ export const navData: NavDataArray = [
 export const skillsData: SkillsArray = [
   {
     skill: 'HTML',
-    years: '5',
+    years: '4',
   },
   {
     skill: 'CSS',
-    years: '5',
+    years: '4',
   },
   {
     skill: 'JavaScript',
-    years: '5',
+    years: '4',
   },
   {
     skill: 'Legacy Redux',
@@ -46,7 +46,7 @@ export const skillsData: SkillsArray = [
   },
   {
     skill: 'Tailwind',
-    years: '5',
+    years: '4',
   },
   {
     skill: 'React Js',
@@ -70,12 +70,24 @@ export const skillsData: SkillsArray = [
     years: '4',
   },
   {
+    skill: 'Postgres',
+    years: '1+',
+  },
+  {
+    skill: 'Prisma',
+    years: '3 months +',
+  },
+  {
     skill: 'TypeScript',
     years: '3',
   },
   {
     skill: 'Material UI',
     years: '3',
+  },
+  {
+    skill: 'Shdcn Libaray',
+    years: '2',
   },
   {
     skill: 'Redux Toolkit',
@@ -162,6 +174,33 @@ export const projectsData: ProjectArray = [
 
 export const experince: Array<ExperienceInterface> = [
   {
+    company: 'BlockQueue Systems Limited	',
+    language:
+      'Shdcn, Next JS (with server action), Tailwind CSS, Drizzle ORM, Turso DB ',
+    worked_as: 'FullStack',
+    role: [
+      {
+        role: `	Designed and developed multiple key features for the platform, including:
+Teams Page: Enabled admins to manage team members, including viewing, promoting, and removing members`,
+      },
+      {
+        role: `	Built these features using Next.js with server actions for efficient server-side functionality.`,
+      },
+      {
+        role: '	Leveraged Drizzle ORM to interact with a robust and scalable database (Turso DB) architecture',
+      },
+      {
+        role: '		Wrote comprehensive end-to-end tests using Playwright, ensuring high reliability and performance',
+      },
+      {
+        role: `	 Implemented a professional folder structure and optimized development workflows, improving maintainability and collaboration among team members`,
+      },
+      {
+        role: ` Continuously collaborated with cross-functional teams to ensure seamless integration of features and alignment with project goals`,
+      },
+    ],
+  },
+  {
     company: 'Ernest predict (Prediction site)',
     language:
       'Typescript, Next JS, Tailwind CSS, Redux (legacy Redux for state management)',
@@ -180,7 +219,7 @@ export const experince: Array<ExperienceInterface> = [
         role: '	Implemented a paginated interface for efficient navigation through daily games and results',
       },
       {
-        role: '	•	Ensured data security and privacy by implementing robust user authentication mechanisms',
+        role: '		Ensured data security and privacy by implementing robust user authentication mechanisms',
       },
     ],
   },

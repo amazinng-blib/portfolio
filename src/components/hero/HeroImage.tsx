@@ -6,14 +6,13 @@ type Props = {};
 
 const HeroImage = (props: Props) => {
   return (
-    <div className="  w-full    m-auto">
+    <div className=" md:order-2 xl:order-2 2xl:order-2 order-1 w-full ">
       <Image
         src={'/image/ernest-pics.jpg'}
         alt="place holder logo"
-        width={100}
-        height={100}
-        layout="responsive"
-        className="fill-blue-500 object-cover w-full"
+        width={400}
+        height={300}
+        className="rounded-full"
       />
     </div>
   );

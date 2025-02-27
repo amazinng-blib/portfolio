@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { BsGithub, BsInstagram, BsTwitter, BsWhatsapp } from 'react-icons/bs';
+import {
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsWhatsapp,
+} from 'react-icons/bs';
 import { Saira_Condensed } from 'next/font/google';
 import { navData } from './data/navdata';
 import { NavDataArray, NavItem } from './Types';
@@ -48,7 +54,7 @@ const Footer = (props: Props) => {
                         target="_blank"
                         className="text-[#feda75]"
                       >
-                        {item?.icons?.instagram ? <BsInstagram /> : null}
+                        {item?.icons?.linkedIn ? <BsLinkedin /> : null}
                       </a>
                       <a
                         href="https://twitter.com/NwankwoErnestO2"

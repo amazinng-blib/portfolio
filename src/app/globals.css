@@ -16,6 +16,17 @@
   }
 }
 
+@layer utilities {
+  .gradient-title {
+    @apply font-extrabold bg-gradient-to-br from-gray-500 via-gray-300
+     to-gray-400 bg-clip-text tracking-tighter text-transparent pr-2 pb-2;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

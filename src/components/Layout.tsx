@@ -12,7 +12,7 @@ const Wraper = ({ children }: Props) => {
     <>
       <Navbar />
 
-      <div>{children}</div>
+      <div className="container mx-auto">{children}</div>
 
       <Footer />
     </>

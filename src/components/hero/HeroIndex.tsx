@@ -13,7 +13,7 @@ type Props = {};
 
 const HeroIndex = (props: Props) => {
   return (
-    <div className="">
+    <div className="conatiner mx-auto">
       <m.div
         variants={{
           hidden: { opacity: 0, y: 75 },
