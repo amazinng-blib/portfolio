@@ -28,7 +28,7 @@ const DownloadCv = (props: Props) => {
       <button
         type="button"
         onClick={(e: any) => downloadFile(LINK)}
-        className="uppercase border-b-2 border-[#7bc5a5] md:text-[1rem] xl:text-[1rem] 2xl:text-[1rem] text-[.7rem] "
+        className="uppercase border-b-2 border-[#7bc5a5] md:text-[1rem] xl:text-[1rem] 2xl:text-[1rem] text-[.7rem] animate-bounce "
       >
         Download CV
       </button>
