@@ -35,7 +35,7 @@ const Skills = (props: Props) => {
       //   opacity: opacity,
 
       // }}
-      className={` ${adam.variable} font-wdc2 w-full max-w-[1300px] m-auto   mt-[2rem] px-1 tracking-wider `}
+      className={` space-y-4 `}
     >
       <hr />
       <h2
@@ -44,16 +44,16 @@ const Skills = (props: Props) => {
         Skills
       </h2>
 
-      <div className="flex justify-center gap-4 flex-wrap mt-6">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
         {data?.length > 0
           ? data?.map((item: SkillsItem, index: any) => {
               return (
-                <div key={index} className=" mb-4 px-2">
-                  <div className="flex justify-center flex-col items-center">
+                <div key={index} className=" mb-4 ">
+                  <div className="">
                     <p className="text-[1rem] md:text-[1.3rem]  font-bold">
                       {item?.skill}
                     </p>
-                    <p className="text-[#9c9c9c]">
+                    <p className="text-[#9c9c9c] truncate">
                       {item?.years} Years Experience
                     </p>
                   </div>
